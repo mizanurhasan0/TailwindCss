@@ -1,0 +1,6 @@
+#slider{
+    scrollbar-width: none;
+}
+#slider::-webkit-scrollbar{
+    display: none;
+}
