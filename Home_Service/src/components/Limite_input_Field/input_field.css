@@ -1,0 +1,13 @@
+.body{
+    background: linear-gradient(to top, rgb(80, 135, 143) 0%, rgb(159, 239, 241) 100%);
+}
+
+form input::placeholder{
+    color: rgb(189, 189, 189);
+}
+form input:valid ~ span{
+    color: #58cff1;
+}
+form input:invalid:focus ~ span{
+    color: red;
+}

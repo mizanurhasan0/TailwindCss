@@ -1,0 +1,59 @@
+nav label{
+    display: flex; 
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+    cursor: pointer;
+   
+}
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#person:checked ~ nav label.person,
+#email:checked ~ nav label.email,
+#code:checked ~ nav label.code{
+    color: white;
+}
+#home:checked ~ nav .activeBar{
+    left: -1.5rem;
+}
+#blog:checked ~ nav .activeBar{
+    left: 8.5rem;
+}
+#person:checked ~ nav .activeBar{
+    left: 18.0rem;
+}
+#email:checked ~ nav .activeBar{
+    left: 28.5rem;
+}
+#code:checked ~ nav .activeBar{
+    left: 38.5rem;
+}
+
+section .content{
+    padding: 10px;
+    background: rgb(63, 85, 90);
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+section .content .title{
+    text-transform: uppercase;
+}
+#home:checked ~ section .content-1{
+    display: block;
+}
+#blog:checked ~ section .content-2{
+    display: block;
+}
+
+#person:checked ~ section .content-3{
+    display: block;
+}
+#email:checked ~ section .content-4{
+    display: block;
+}
+#code:checked ~ section .content-5{
+    display: block;
+}

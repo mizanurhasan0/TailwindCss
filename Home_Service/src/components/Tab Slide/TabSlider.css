@@ -1,0 +1,94 @@
+.wrapper{
+    max-width: 700px;
+    width: 100%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.wrapper nav{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+   
+}
+.wrapper nav label{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    color: rgb(43, 42, 42);
+    z-index: 1;
+}
+.wrapper nav .slider{
+    position: absolute;
+    background: #17a2b8;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease-out;
+}
+
+#home:checked ~ nav label.home,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+#about:checked ~ nav label.about,
+#blog:checked ~ nav label.blog
+{
+    color: white;
+}
+
+#code:checked ~ nav .slider{
+    left: 20%;
+}
+#help:checked ~ nav .slider{
+    left: 40%;
+}#about:checked ~ nav .slider{
+    left: 60%;
+}#blog:checked ~ nav .slider{
+    left: 80%;
+}
+input[type="radio"]{
+    display: none;
+}
+section .content{
+    display: none;
+}
+section .content .title{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 20px 0 5px 0;
+
+}
+#home:checked ~ section .content.content-1{
+    display: block;
+}
+#code:checked ~ section .content.content-2{
+    display: block;
+}
+#help:checked ~ section .content.content-3{
+    display: block;
+}
+#about:checked ~ section .content.content-4{
+    display: block;
+}
+#blog:checked ~ section .content.content-5{
+    display: block;
+}
