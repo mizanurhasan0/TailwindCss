@@ -13,7 +13,7 @@ const Teams = () => {
         <div className="w-full h-full flex flex-col items-center text-gray-200 p-5">
           <IoStorefrontSharp  className="text-4xl "/>
           <h1 className="text-4xl p-3">Our Team</h1>
-          <p className="text-center text-gray-300">
+          <p className="text-center text-gray-100">
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy text ever since the
             1500s, when an unknown printer took a galley of type and scrambled
