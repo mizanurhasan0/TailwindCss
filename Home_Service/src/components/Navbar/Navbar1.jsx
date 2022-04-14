@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Cus_Button from "./Cus_Button";
+import { Link as Link2 } from "react-scroll";
+import { BrowserRouter, Link, useNavigate } from "react-router-dom";
 
 const Navbar1 = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(true);
@@ -16,8 +18,11 @@ const Navbar1 = () => {
   };
   window.addEventListener("scroll", scrollingValue);
   return (
-    <div className={`${scrollValue?"bg-[#0000009a]":"fixed top-0 bg-gray-800"}  w-full h-16  flex items-center justify-between px-8 text-gray-200 shadow-md z-50`}>
-
+    <div
+      className={`${
+        scrollValue ? "bg-[#0000009a]" : "fixed top-0 bg-gray-800"
+      }  w-full h-16  flex items-center justify-between px-8 text-gray-200 shadow-md z-50`}
+    >
       <a href="/" className="flex items-center space-x-1">
         <img
           src={
@@ -51,19 +56,25 @@ const Navbar1 = () => {
           </svg>
         </button>
         <ul
-          className={`absolute left-0 right-0  h-screen
+          className={`fixed left-0 right-0  h-screen
           md:h-full space-y-10 transform  space-x-6
           ${
-            mobileNavOpen ? "translate-x-full " : "translate-x-0 duration-300 bg-gray-800"
+            mobileNavOpen
+              ? "translate-x-full "
+              : "translate-x-0 duration-300 bg-gray-800"
           } md:translate-x-0
            text-center pt-11 md:relative md:flex 
            md:p-0 md:m-0 md:justify-center md:items-center 
            md:space-y-0 hover:text-white`}
         >
-          <li className=" cursor-pointer hover:underline">Home</li>
-          <li className=" cursor-pointer hover:underline">All Services</li>
-          <li className=" cursor-pointer hover:underline">About Us</li>
-          <li className=" cursor-pointer hover:underline">Teams</li>
+          <li className=" cursor-pointer hover:underline">
+            <Link to="/">Home</Link>
+          </li>
+
+          <li className=" cursor-pointer hover:underline">
+            <Link to="/about">About Us</Link>
+          </li>
+          <li className=" cursor-pointer hover:underline"><Link to="/team">Teams</Link></li>
           <li className=" cursor-pointer hover:underline">
             <Cus_Button>Login</Cus_Button>
           </li>

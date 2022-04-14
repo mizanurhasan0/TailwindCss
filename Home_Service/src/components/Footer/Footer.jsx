@@ -2,7 +2,7 @@ import React from "react";
 import { IoLogoFacebook, IoLogoYoutube, IoMailOpen } from "react-icons/io5";
 const Footer = () => {
   return (
-    <div className="w-full px-5 bg-gray-700 h-auto text-gray-200 flex justify-between p-5" >
+    <div className="w-full px-14 bg-gray-700 h-auto text-gray-200 flex justify-between p-5" >
       <div className="space-y-4">
         <h1 className="font-semibold uppercase">Software-BD</h1>
 
@@ -21,7 +21,7 @@ const Footer = () => {
           <li className=" cursor-pointer hover:underline">FAQs</li>
         </ul>
       </div>
-      <div className="md:space-x-4 mt-8 md:flex md:m-0 md:p-0 md:space-y-0">
+      <div className="xl:space-x-4 mt-8 xl:flex xl:m-0 xl:p-0 xl:space-y-0 space-y-2">
         <a href="/" className="group flex items-center">
           <IoLogoFacebook className=" text-xl mr-2 group-hover:text-blue-600"/>
           Facebook

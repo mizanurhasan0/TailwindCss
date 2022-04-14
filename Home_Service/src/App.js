@@ -1,17 +1,24 @@
 import "./App.css";
-import AllCategory from "./components/Categorys/AllCategory";
-import Footer from "./components/Footer/Footer";
-import HeaderSlide from "./components/HeaderSliders/HeaderSlide";
 import Navbar1 from "./components/Navbar/Navbar1";
 import TopBanner from "./components/TopBanner/TopBanner";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./components/About/About";
+import HomePage from "./HomePage";
+import Footer from "./components/Footer/Footer";
+import Teams from "./components/Team Member/Teams";
 function App() {
   return (
     <div>
-      <TopBanner />
-      <Navbar1 />
-      <HeaderSlide />
-      <AllCategory />
-      <Footer />
+      <BrowserRouter>
+        <TopBanner />
+        <Navbar1 />
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route path="/about" exact element={<About />} />
+          <Route path="/team" exact element={<Teams />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
