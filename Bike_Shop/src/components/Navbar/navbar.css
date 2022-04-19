@@ -1,0 +1,22 @@
+
+.navbar ul li a::before{
+ position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: rgb(252, 29, 29);
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+.navbar ul li a.active::before{
+    transform: scale(1);
+    transform-origin: left;
+  }
+.navbar ul li a:hover::before {
+    transform: scale(1);
+    transform-origin: left;
+    background-color: rgb(245, 132, 132);;
+  }
