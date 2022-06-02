@@ -6,6 +6,10 @@ Tailwind Based responsive web application
 ## [Online Home Service](https://github.com/mizanurhasan0/TailwindCss/tree/main/Home_Service) web view 
 ![Home page](https://github.com/mizanurhasan0/TailwindCss/blob/09261545a9fb19e1f165e79b20410cb7ed422fb8/Home_Service/src/assets/Component%20Img/scrnli_4_14_2022_3-55-49%20PM.png "Info page")
 
+## [Online Bike Lover Website](https://github.com/mizanurhasan0/TailwindCss/tree/main/Bike_Shop) web view 
+![Home page](https://github.com/mizanurhasan0/TailwindCss/blob/8ca63421b06fd98ae45d06cecce764b2c163ab20/Bike_Shop/src/assets/fullwebsite.png "Info page")
+
+
 ## [Webside Header Image Slider](https://github.com/mizanurhasan0/TailwindCss/tree/main/Tailwind_Small_Components) web view 
 ![Home page](https://github.com/mizanurhasan0/TailwindCss/blob/c9b26f25739e12dc9cda5d94734cc76c35e97077/Tailwind_Small_Components/src/assets/Component%20Img/header%20slider.PNG "Info page")
 
