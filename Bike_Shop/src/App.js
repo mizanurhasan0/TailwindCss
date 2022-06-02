@@ -18,6 +18,7 @@ function App() {
           <Route path="/bikes" exact element={<About />} />
           <Route path="/service" exact element={<Teams />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

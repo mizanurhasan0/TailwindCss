@@ -9,7 +9,7 @@ export const BikeViews = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="w-full  px-10 text-black mt-10 flex flex-col">
+    <div className="w-full h-[250vh] xl:h-[320vh] px-10 text-black mt-10 flex flex-col">
       {BikeCategoryData.map((items, key) => {
         return (
           <div key={key} className="h-60 w-full ">

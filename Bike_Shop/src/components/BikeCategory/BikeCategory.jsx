@@ -4,7 +4,7 @@ import { IoEyeSharp } from "react-icons/io5";
 
 export const BikeCategory = () => {
   return (
-    <div className="w-full h-auto">
+    <div className="w-full flex flex-col h-auto">
       <div className="w-full text-center uppercase py-7">
         <p className="text-xl text-gray-600">Discover The</p>
         <h1 className="font-semibold text-4xl tracking-tighter">

@@ -19,7 +19,7 @@ const AllCategory = () => {
                 to="recommended"
                 activeClass="true"
                 smooth={true}
-                offset={50}
+                offset={-50}
                 duration={500}
               >
                 Recommended
@@ -30,7 +30,7 @@ const AllCategory = () => {
                 to="forhome"
                 activeClass="true"
                 smooth={true}
-                offset={50}
+                // offset={50}
                 duration={500}
               >
                 For Your Home
@@ -41,7 +41,7 @@ const AllCategory = () => {
                 to="trending"
                 activeClass="true"
                 smooth={true}
-                offset={50}
+                // offset={50}
                 duration={500}
               >
                 Trending
